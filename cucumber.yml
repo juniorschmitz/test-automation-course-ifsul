@@ -1,0 +1,5 @@
+default: -p chrome -p html_report -p pretty
+
+html_report: --format html --out=log/report.html
+chrome: BROWSER=chrome
+pretty: --format pretty
