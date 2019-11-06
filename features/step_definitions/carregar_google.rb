@@ -1,7 +1,6 @@
 Dado("que esteja na página inicial do Google") do
   @google_page = GooglePage.new
   @google_page.load
-  binding.pry
 end
 
 Então("o formulário de busca deve ser apresentado") do
