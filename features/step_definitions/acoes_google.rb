@@ -14,9 +14,6 @@ Quando("buscar por {string}") do |query|
 end
 
 Então("resultados devem ser apresentados") do
-  expect(@google_result_page.text).to include 'Batata'
-  expect(@google_result_page.text).to have_content 'Batata'
-  expect(@google_result_page.text).to match(/Batata/i)
   expect(@google_result_page.results.first).not_to be nil
   expect(@google_result_page).to have_results
 end
