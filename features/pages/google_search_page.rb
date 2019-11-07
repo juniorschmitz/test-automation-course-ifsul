@@ -1,7 +1,8 @@
-class GooglePage < SitePrism::Page
+class GoogleSearchPage < SitePrism::Page
   set_url 'https://www.google.com/'
 
-  element  :search_form, 'div.SDkEP'
+  element  :search_form, 'input.gLFyf'
+  element  :search_button, '.aajZCb .gNO89b'
 
   def generate_user
     user = Array.new
